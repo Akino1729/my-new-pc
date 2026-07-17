@@ -1,7 +1,27 @@
+html {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-weight: 400;
+  flex:1;
+}
+
 body { /* スタイル適用先として body タグを指定するセレクタ */
  display: flex; /* 画面全体の配置を調整するための設定 */
- justify-content: center; /* コンテンツを中央に配置 */
- padding: 0px 10px; /* 画面の上下に 0px の余白、左右に 10px の余白を設定 */
+ flex-direction: column; /* 要素を縦に並べます */
+ padding: 0px;/* 画面の上下に 0px の余白、左右に 10px の余白を設定 */
+ min-height: 100vh; /* 画面の高さの最低を100%にします */
+}
+
+ul{
+  list-style: none;
+  padding-left: 1rem;
+}
+
+ul li::before{
+  color: #b0380f;
+  margin-right: 0.5rem;
+  font-family: "Font Awesome 7 Free";
+  font-weight: 900;
+  content: "\f0a4"; /* ここを変更する */
 }
 
 .container { /* スタイル適用先として container クラスを指定するセレクタ */
@@ -10,22 +30,18 @@ body { /* スタイル適用先として body タグを指定するセレクタ 
  margin: 0 auto; /* 上下に 0 の外側の余白を追加し、中央揃えにする */
 }
 
-.ingredients {
- font-weight: normal;
- font-size: 2rem;
- padding-left: 10px; /* 要素内側の左部に 10px の余白 */
- border-left: 15px solid; /* 要素境界の左端に幅 15px の実線 */
- border-bottom: 4px solid;
+.article-title {
+  text-align: center;
+  font-family: "Rampart One", sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+  padding-left: 10px; /* 要素内側の左部に 10px の余白 */
+  border-bottom: 4px solid;
 }
 
-.directions {
- color: #16a085; /* 文字色 */
- font-weight: bold;
- font-size: 1.5rem;
- text-align: center; /* 中央配置 */
- letter-spacing: 0.5rem; /* 文字間隔を広げる */
- margin-bottom: 0.5rem; /* 要素外側の下部に 0.5rem の余白 */
-padding: 0.5rem 0rem; /* 要素内側の上下に 0.5rem、左右に 0rem の余白 */
- border-top: 3px dashed #16a085; /* 要素境界の上部に破線 */
- border-bottom: 3px dashed #16a085; /* 要素境界の下部に破線 */
+.footer {
+  padding: 2rem;
+  font-size: 15px;
+  color: #999;
+  background: #fff;
 }
