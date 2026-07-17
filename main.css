@@ -1,47 +1,137 @@
 html {
-  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
   font-weight: 400;
-  flex:1;
 }
 
-body { /* スタイル適用先として body タグを指定するセレクタ */
- display: flex; /* 画面全体の配置を調整するための設定 */
- flex-direction: column; /* 要素を縦に並べます */
- padding: 0px;/* 画面の上下に 0px の余白、左右に 10px の余白を設定 */
- min-height: 100vh; /* 画面の高さの最低を100%にします */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #faf8f5;
+  color: #2c2c2c;
 }
 
-ul{
+.container {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  flex: 1;
+}
+
+h1.article-title {
+  text-align: center;
+  font-family: "Rampart One", sans-serif;
+  font-weight: normal;
+  font-size: 1.8rem;
+  background-color: #2c3e50; /* h1: 濃紺の背景 */
+  color: #ffffff; /* h1: 白文字 */
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+h2 {
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 1.3rem;
+  background-color: #e67e22; /* h2: オレンジの背景（h1とは別の色） */
+  color: #ffffff; /* h2: 白文字 */
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-top: 2.5rem;
+}
+
+h3 {
+  border-left: 6px solid #e67e22;
+  padding-left: 0.6rem;
+  margin-top: 2rem;
+}
+
+h4 {
+  color: #2c3e50;
+  margin-top: 1.5rem;
+}
+h5 {
+}
+
+p {
+  line-height: 1.8;
+}
+
+
+ul {
   list-style: none;
   padding-left: 1rem;
 }
 
-ul li::before{
+ul li::before {
   color: #b0380f;
   margin-right: 0.5rem;
   font-family: "Font Awesome 7 Free";
   font-weight: 900;
-  content: "\f0a4"; /* ここを変更する */
+  content: "\f192";
 }
 
-.container { /* スタイル適用先として container クラスを指定するセレクタ */
- max-width: 768px; /* コンテンツの最大幅を 768px に制限 */
- width: 100%; /* コンテンツが幅いっぱいに広がるように設定 */
- margin: 0 auto; /* 上下に 0 の外側の余白を追加し、中央揃えにする */
+ul li {
+  margin-bottom: 0.5rem;
 }
 
-.article-title {
+ol {
+  list-style-type: hiragana; /* あ・い・う… で順序を表現 */
+  padding-left: 2rem;
+}
+
+ol li {
+  margin-bottom: 0.6rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 1rem auto;
+  border: 4px solid #2c3e50; /* 画像の枠線 */
+  border-radius: 8px;
+}
+
+a {
+  color: #2980b9;
+  text-decoration: underline;
+  transition: color 0.3s ease, background-color 0.3s ease; /* ホバー時の変化を滑らかに */
+}
+
+a:hover {
+  color: #ffffff;
+  background-color: #e67e22;
+  text-decoration: none;
+}
+
+/* ---------- 表 ---------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 0.5rem 0.8rem;
+  text-align: left;
+}
+
+th {
+  background-color: #2c3e50;
+  color: #ffffff;
+}
+
+/* ---------- フッター ---------- */
+
+footer {
   text-align: center;
-  font-family: "Rampart One", sans-serif;
-  font-weight: normal;
-  font-size: 2rem;
-  padding-left: 10px; /* 要素内側の左部に 10px の余白 */
-  border-bottom: 4px solid;
-}
-
-.footer {
-  padding: 2rem;
-  font-size: 15px;
+  padding: 2rem 1rem;
+  font-size: 0.85rem;
   color: #999;
-  background: #fff;
+  margin-top: 3rem;
 }

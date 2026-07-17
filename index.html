@@ -3,39 +3,303 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tzug's Curry Recipe</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+JP:wght@100..900&family=Rampart+One&display=swap">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css">
-    <link rel="stylesheet"　href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+JP:wght@100..900&family=Rampart+One&family=Zen+Maru+Gothic&display=swap">
+    <title>ノートPCが壊れてしまった話</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+JP:wght@100..900&family=Rampart+One&family=Zen+Maru+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="main.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
   </head>
-    <!-- ここから本文開始 -->
-  <div class="container">
-    <body>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="article-title">
+          <i class="fa-solid fa-laptop"></i>
+          ノートPCが壊れてしまった話
+          <i class="fa-solid fa-laptop"></i>
+        </h1>
+      </header>
 
-      <h1 class="article-title"><i class="fa-solid fa-laptop"></i>ノートPCが故障してしまった話<i class="fa-solid fa-laptop"></i></h1>
-      <h2>時候の挨拶</h2>
+      <!-- ============ 時候の挨拶 ============ -->
+      <section id="greeting">
+        <h2>時候の挨拶</h2>
+        <p>
+          ７月９日の夜，メモリを拡張しようとしてオンボードのメモリを無理やり外したところ，復旧が絶望的になってしまいました（笑）．
+          諦めることも肝心なのでもう良い機会としてPCを買い替えてしまおうと思います．
+          ということでPC選定記録をここに残します．
+          （ちなみに今は学校から間に合わせPCを借りています．）
+          この記録が情報系学科新入生などの参考になれば幸いです．
+        </p>
+      </section>
 
-      <h2>今のPCについて</h2>
-      <h3>用途と展望</h3>
-      <h4>今の用途</h4>
-      <h4>将来の用途</h4>
-      <h3>スペック</h3>
-      <h3>今の不満</h3>
-      <h3>要望</h3>
-      <h4>最低要望</h4>
-      <h4>あれば望ましいもの</h4>
-      <h4>要望に含めないもの</h4>
-      <h3>PCの候補</h3>
-      <h3>最終的なPC</h3>
-      <h3>さいごに</h3>
-    </body>
-    <footer>
+      <!-- ============ 今のPCについて ============ -->
+      <section id="current-pc">
+        <h2>今のPCについて</h2>
 
-      <p>&copy; 2025 Akino1729 Last Edited: 2026/07/17</p>
-    </footer>
-  </div>
+        <h3>用途と展望</h3>
+
+        <h4>今の用途</h4>
+        <ul>
+          <li>デュアルブート運用（80GBを割り当てて2つの環境を使い分け）</li>
+          <li>アプリ制作（<a href="https://unity.com/ja">Unity</a>を含む）</li>
+          <li>Physical AI(主にSO-101)の学習・開発</li>
+          <li>ローカルLLM（8B程度のモデル）の実行・検証</li>
+          <li>講義の受講（Zoom）</li>
+          <li>ゲーム（ドラゴンクエストシリーズ，音ゲー（adofaiやosu!など））</li>
+          <li>資料作成（Microsoft OfficeやLaTeXなど）</li>
+          <li>
+            競技プログラミング（<a href="https://atcoder.jp/">AtCoder</a>，<a
+              href="https://pckoshien.u-aizu.ac.jp/"
+              >パソコン甲子園（PCK）</a
+            >）
+          </li>
+        </ul>
+
+        <h4>将来の用途</h4>
+        <p>卒業までを見据えて，次のようなことにも挑戦したいと考えています．</p>
+        <ul>
+          <li>DTM（作曲・音楽制作）</li>
+          <li>電気・電子回路の設計製図（CADなど）</li>
+          <li>マインクラフト</li>
+        </ul>
+        <h5>キャンパス移転後・高専卒業後について</h5>
+        <p>
+        来年（2027年度）に寝屋川キャンパスから中百舌鳥キャンパスへ引っ越しますが，それに伴って何かPC選定に影響があるかといえばないです．
+        （通学時間や形態が変わらないので．）
+        卒業後は電気・電子工学と情報工学が学べる大学に編入したいなと思っています．
+        卒業までの２年＋編入後の院進までの２年間を見据えて，使えるPCを選ぼうと思います．
+        大学でもやりたいことはそんなに変わらないので上で述べた今・将来の用途に変わりはありません．
+        </p>
+
+        <h3>スペック</h3>
+        <p>現在使用しているPCのスペックは以下の通りです．</p>
+        <table>
+          <tr>
+            <th>項目</th>
+            <th>内容</th>
+          </tr>
+          <tr>
+            <td>機種</td>
+            <td>Dell Inspiron 13 5330</td>
+          </tr>
+          <tr>
+            <td>CPU</td>
+            <td>Intel Core Ultra5 125H</td>
+          </tr>
+          <tr>
+            <td>メモリ</td>
+            <td>16GB（オンボード）</td>
+          </tr>
+          <tr>
+            <td>ストレージ</td>
+            <td>SSD 512GB</td>
+          </tr>
+          <tr>
+            <td>GPU</td>
+            <td>Intel Arc（内蔵）</td>
+          </tr>
+          <tr>
+            <td>ポート</td>
+            <td>HDMI×1，USB-A×1，USB-C×2</td>
+          </tr>
+          <tr>
+            <td>その他</td>
+            <td>日本語配列，キーボードバックライト</td>
+          </tr>
+          <tr>
+            <td>購入金額</td>
+            <td>12万円程度</td>
+          </tr>
+        </table>
+        <h3>今の不満</h3>
+        <ul>
+          <li>デュアルブートしているため，ストレージ容量が足りない</li>
+          <li>各種オプションやプラグインを追加すると，さらにストレージを圧迫する</li>
+          <li>ローカルLLMを動かす際，メモリ16GBでは不足しがち</li>
+          <li>同様の理由でGPU性能（グラボ）も不足している</li>
+          <li>メモリがオンボード仕様のため，あとから増設できない</li>
+          <li>
+            画像認識やPhysical AIの学習には<a href="https://ja.wikipedia.org/wiki/CUDA"
+              >CUDA</a
+            >（NVIDIA製GPU向けの並列計算基盤）が必要だが，Intel Arc搭載機のため利用できない
+          </li>
+        </ul>
+        <h3>満足しているところ</h3>
+        <p>
+          不満たらたらですが，満足していることもあります．
+          Macbookのデザインがとても好きなのですが，デザインがそれに似ていて，作業のテンションが多少上がるのでそこは良かったです．
+          <img src="assets/insprion-13-5330.jpg" alt="insprion 13 5330">
+        </p>
+      </section>
+
+      <!-- ============ 要望 ============ -->
+      <section id="requirements">
+        <h3>次に購入するPCに求めるスペック</h3>
+
+        <h4>最低要望（優先順位順）</h4>
+        <ol>
+          <li>CUDA搭載GPU ― 理由：画像認識・Physical AIの機械学習に必須なため</li>
+          <li>メモリ32GB ― 理由：今メモリ使用率が節約しても容易に90%に到達していることが多いから．</li>
+          <li>ストレージ SSD 1TB ― 理由：現在の512GBで，今の空き容量が節約しまくって30GB程度．1TBは必須であるから．</li>
+          <li>予算 25万円程度以下 ― 理由：奨学金とアルバイト代で賄える限界がこの金額だから．高すぎたらデスクトップを買った方が安くなってくるから．</li>
+          <li>日本語配列 ― 理由：Ubutnuの初期設定で，Windowsと同じテンションでUS配列を選んで非常に面倒くさいことになり，内部配列とキーボード配列を統一することは大事だと感じたから．UbuntuでUS配列でも日本語を打てるようにしても何回も設定がリセットされて次はちゃんと日本語配列にしようと反省したから．</li>
+        </ol>
+
+        <h4>あれば望ましいもの</h4>
+        <ul>
+          <li>ディスプレイ14インチ以上</li>
+          <li>Ryzen CPU</li>
+          <li>拡張性のあるメモリ</li>
+          <li>HDMI・USB-Aポート搭載</li>
+          <li>キーボードバックライト</li>
+        </ul>
+
+        <h4>要望に含めないもの</h4>
+        <ul>
+          <li>テンキーの有無</li>
+          <li>ディスプレイの解像度や種類</li>
+        </ul>
+      </section>
+
+      <!-- ============ PCの候補 ============ -->
+      <h2>PCの選定</h2>
+      <section id="candidates">
+        <h3>PCの候補</h3>
+
+        <h4>候補①：Dell Alienware 15 DA15265</h4>
+        <img
+          src="assets/alienware.jpg"
+          alt="候補①【Dell Alienware】の外観画像"
+        />
+        <table>
+          <tr>
+            <th>項目</th>
+            <th>内容</th>
+          </tr>
+          <tr>
+            <td>価格帯</td>
+            <td>282,480円</td>
+          </tr>
+          <tr>
+            <td>CPU</td>
+            <td>AMD Ryzen™ 7 260 プロセッサー (24MB キャッシュ, 8 コア, 最大 5.1 GHz</td>
+          </tr>
+          <tr>
+            <td>メモリ</td>
+            <td>32GB, 1x32GB, DDR5, 5600 MT/s</td>
+          </tr>
+          <tr>
+            <td>ストレージ</td>
+            <td>1TB PCIe 4 SSD (Gen 4)</td>
+          </tr>
+          <tr>
+            <td>GPU</td>
+            <td>NVIDIA® GeForce RTX™ 3050, 6 GB GDDR6</td>
+          </tr>
+          <tr>
+            <td>画面サイズ</td>
+            <td>15.3インチ</td>
+          </tr>
+          <tr>
+            <td>重量</td>
+            <td>2.25 kg</td>
+          </tr>
+          <tr>
+            <td>その他</td>
+            <td>Alienware ホワイト バックライト キーボード, 日本語</td>
+          </tr>
+        </table>
+        <p>値段以外は完璧です！値段以外は．．．メモリの拡張も他の人の記事を見ている感じ出来そうです．PCを調べていて感じたのが，同じ性能のモデルだと，他社は34万円ほどしていました．今のPCもDellですが，18万円相当を12万円で購入しているのでDellはやはりかなり安いですね．</p>
+
+        <h4>候補②：Apple MacBook Air</h4>
+        <img
+          src="assets/macbook.jpg"
+          alt="候補②【Apple MacBook Air】の外観画像"
+        />
+        <table>
+          <tr>
+            <th>項目</th>
+            <th>内容</th>
+          </tr>
+          <tr>
+            <td>価格帯</td>
+            <td>314,800円</td>
+          </tr>
+          <tr>
+            <td>CPU</td>
+            <td>M5チップ10コアCPU</td>
+          </tr>
+          <tr>
+            <td>メモリ</td>
+            <td>24GBユニファイドメモリ</td>
+          </tr>
+          <tr>
+            <td>ストレージ</td>
+            <td>1TB SSDストレージ</td>
+          </tr>
+          <tr>
+            <td>GPU</td>
+            <td>10コアGPU</td>
+          </tr>
+          <tr>
+            <td>画面サイズ</td>
+            <td>13インチ</td>
+          </tr>
+          <tr>
+            <td>重量</td>
+            <td>1.23 kg</td>
+          </tr>
+          <tr>
+            <td>その他</td>
+            <td>16コアNeural Engine</td>
+          </tr>
+        </table>
+        <p>情報系でMacBook？！と思った方もいらっしゃるかもしれませんが，最近のAI業界のトレンドPCは見る感じMacbookです．
+          高専の情報系の先生でもMacbookを使っている方は多いので，ソフトの互換性とかもそこまで問題ないのだろうと思います（仮想Windowsを立ち上げるなどして解決してそうです．）．
+          メモリの使い方も上手だという噂なので24GBでも足りるのかなと思っています．でもやはり値段がネックですね．
+          ところでApple系のGPUということでCUDAには対応していませんがMacbookは機械学習に向いているそうなのでこちらも実際なんとかなりそうです．
+        </p>
+
+      </section>
+      <!-- ============ 最終的なPC ============ -->
+      <section id="final">
+        <h3>最終的なPC</h3>
+        <p>Dell Alienware 15 DA15265</p>
+        <p>上に挙げたPC以外にも調べましたが，Dell以上に安いPCがありませんでした．
+          また，Macbookと違ってWindows 11 Home，CUDA対応といったものがあるのでこちらにいたしました．
+        </p>
+      </section>
+
+      <!-- ============ さいごに ============ -->
+      <section id="closing">
+        <h2>さいごに</h2>
+        <p>
+          PCが壊れるという出来事は想定外でしたが，あらためて自分の使い方を整理してみると，
+          何を優先すべきかが見えてきました．次のPCが大学卒業まで，もっといえば修士課程あたりまで安心して使えるパートナーになってくれればと思います．
+        </p>
+      </section>
+
+      <!-- ============ 参考文献・用語リンク ============ -->
+      <section id="references">
+        <h2>参考文献・用語解説リンク</h2>
+        <ul>
+          <li><a href="https://ja.wikipedia.org/wiki/CUDA">CUDA（Wikipedia）</a></li>
+          <li><a href="https://unity.com/ja">Unity 公式サイト</a></li>
+          <li><a href="https://atcoder.jp/">AtCoder 公式サイト</a></li>
+          <li><a href="https://pckoshien.u-aizu.ac.jp/">パソコン甲子園（PCK）公式サイト</a></li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>&copy; 2026 Akino1729 Last Edited: 2026/07/17</p>
+      </footer>
+    </div>
+  </body>
 </html>
