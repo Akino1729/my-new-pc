@@ -1,6 +1,7 @@
 html {
   font-family: "Zen Maru Gothic", sans-serif;
   font-weight: 400;
+  scroll-behavior: smooth; /* 目次クリック時に滑らかにスクロール */
 }
 
 body {
@@ -53,6 +54,30 @@ h4 {
   margin-top: 1.5rem;
 }
 h5 {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #6b6b6b; /* 本文より控えめなグレー */
+  margin-top: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+h5::before {
+  font-family: "Font Awesome 7 Free";
+  font-weight: 900;
+  content: "\f05a"; /* 補足情報アイコン（i マーク） */
+  color: #2980b9;
+  font-size: 1rem;
+}
+
+h5  {
+  background-color: #f0f4f8;
+  border-left: 3px solid #2980b9;
+  padding: 0.7rem 1rem;
+  font-size: 0.95rem;
+  color: #4a4a4a;
 }
 
 p {
@@ -103,6 +128,34 @@ a {
 a:hover {
   color: #ffffff;
   background-color: #e67e22;
+  text-decoration: none;
+}
+
+/* ---------- 目次 ---------- */
+
+.toc {
+  background-color: #ffffff;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.toc h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.toc ol {
+  list-style-type: decimal; /* 目次は通常の連番に上書き */
+  padding-left: 1.5rem;
+}
+
+.toc ol li {
+  margin-bottom: 0.3rem;
+}
+
+.toc a {
   text-decoration: none;
 }
 
